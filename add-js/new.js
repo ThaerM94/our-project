@@ -1,17 +1,19 @@
-function mark () {
+function natnum ( ){
+    var N4 =prompt("type a natural num") ;
+    var result;
+    
+    if (N4 >= 0) {     
+        result =  N4+' is correct';   
+    } 
+    
+      
+     else {     
+        while(N4 < 0){
+            N4= prompt("type a correct value") ;
+        }
+        result =  N4+' is correct'; 
+    } 
+   return result; 
 
-var exam = prompt ("what is your mark ?")
-console.log(exam);
-var interview = prompt (" did you pass the interview ?");
-console.log(interview);
-var age = prompt (" what is your age ");
-console.log(age);
-var result;
-if (exam >= 25 && interview >= 80 && age >= 24  ) {
-    result = 'passed'
- } else {result = 'fail'
- 
- }
- return result;
 }
-document.write('<h3>'+mark()+'</h3>');
+document.write('<h3>'+natnum()+'</h3>');
